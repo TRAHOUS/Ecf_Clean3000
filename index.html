@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clean3000</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <header>
+      <img src="/img/logo-clean3000.png" alt="Logo" />
+    </header>
+    <main>
+      <h1>Avis de passage</h1>
+      <form id="ajoutForm">
+        <label for="entreprise">Nom de l'entreprise ou du client:</label>
+        <input type="text" id="entreprise" name="entreprise" required />
+
+        <label for="date">Date de passage:</label>
+        <input type="date" id="date" name="date" required />
+
+        <label for="description">OBSERVATION:</label>
+        <textarea
+          id="description"
+          name="description"
+          rows="4"
+          required
+        ></textarea>
+
+        <label for="signatureClient">Signature du client:</label>
+        <!-- Balise pour afficher une zone de dessin avec l'ID "canvasClient"  -->
+
+        <canvas id="canvasClient" width="250" height="100"></canvas>
+
+        <label for="signatureTechnicien">Signature du technicien:</label>
+        <!-- Balise pour afficher une zone de dessin avec l'ID "canvasClient"  -->
+
+        <canvas id="canvasTechnicien" width="250" height="100"></canvas>
+
+        <button type="submit">Ajouter</button>
+      </form>
+    </main>
+
+    <script src="main.js"></script>
+  </body>
+</html>
